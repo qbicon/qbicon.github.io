@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get involved — QBICON</title>
+  <meta name="description" content="Join QBICON as a researcher, member lab, or supporter." />
+  <link rel="canonical" href="https://qbicon.org/join.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Get involved — QBICON" />
+  <meta property="og:description" content="Join QBICON as a researcher, member lab, or supporter." />
+  <meta property="og:url" content="https://qbicon.org/join.html" />
+  <meta property="og:image" content="https://qbicon.org/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- ============================ HEADER ============================
+       Edit the links/labels below. This header is repeated on every page,
+       so update each .html file (or find-and-replace across them). -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="QBICON home">
+        <img class="brand-mark" src="assets/logo-mark.svg" alt="" width="44" height="44" />
+        <span class="brand-text">
+          <span class="brand-short">QBICON</span>
+          <span class="brand-full">Quantum Biosciences Consortium</span>
+        </span>
+      </a>
+      <input class="nav-toggle-cb" type="checkbox" id="nav-toggle" aria-hidden="true" tabindex="-1" />
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-list">
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="consortium.html">Consortium</a></li>
+            <li><a href="qbisquared.html">QBi²</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        <a class="btn btn-primary nav-cta" href="join.html">Get involved</a>
+      </nav>
+      <label class="nav-toggle" for="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Get involved</p>
+        <h1 class="page-title">Help build the field</h1>
+        <p class="page-intro">Quantum biology needs more than one lab. Wherever you sit, there's a way in.</p>
+      </div>
+    </section>
+
+    <section class="section join">
+      <div class="container join-grid">
+        <div class="join-head">
+          <ul class="paths">
+            <li class="path">
+              <span class="path-dot" style="background: var(--q-green);"></span>
+              <div><p class="path-title">Researchers</p><p class="path-desc">Join a working group, share methods and data, and co-author the science.</p></div>
+            </li>
+            <li class="path">
+              <span class="path-dot" style="background: var(--q-blue);"></span>
+              <div><p class="path-title">Institutions</p><p class="path-desc">Bring your lab in as a member and help set shared standards and infrastructure.</p></div>
+            </li>
+            <li class="path">
+              <span class="path-dot" style="background: var(--q-coral);"></span>
+              <div><p class="path-title">Supporters</p><p class="path-desc">Fund foundational, open research and the next generation of quantum biologists.</p></div>
+            </li>
+          </ul>
+        </div>
+        <!-- FORM: set the action to your own endpoint (e.g. Formspree: https://formspree.io/f/xxxx),
+             or use action="mailto:hello@qbicon.org" method="post" to open the visitor's email app. -->
+        <form class="join-form" action="https://formspree.io/f/your-form-id" method="POST">
+          <input type="hidden" name="_subject" value="QBICON enquiry" />
+          <div class="field">
+            <label for="jf-name">Name</label>
+            <input id="jf-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="jf-email">Email</label>
+            <input id="jf-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="jf-role">I am a…</label>
+            <select id="jf-role" name="role">
+              <option>I'm a researcher</option>
+              <option>Become a member lab</option>
+              <option>Support the mission</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="jf-msg">Message <span class="optional">(optional)</span></label>
+            <textarea id="jf-msg" name="message" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================
+       Repeated on every page — edit links, blurb, social URLs, and email. -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="index.html" aria-label="QBICON home">
+          <img class="brand-mark" src="assets/logo-mark.svg" alt="" width="40" height="40" />
+          <span class="brand-short">QBICON</span>
+        </a>
+        <p class="footer-blurb">Coordinating open, interdisciplinary research to establish quantum biology as a rigorous science.</p>
+        <ul class="social">
+          <!-- Add your real profile URLs in the href="" values below. -->
+          <li><a href="#" target="_blank" rel="noopener" aria-label="X">X</a></li>
+          <li><a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+        </ul>
+      </div>
+      <nav class="footer-cols" aria-label="Footer">
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="consortium.html">Consortium</a></li>
+            <li><a href="news.html">News</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Engage</h3>
+          <ul>
+            <li><a href="qbisquared.html">QBi² event</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="join.html">Get involved</a></li>
+            <li><a href="mailto:hello@qbicon.org">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer-base">
+      <p>© 2026 Quantum Biosciences Consortium</p>
+      <p class="footer-meta"><a href="mailto:hello@qbicon.org">hello@qbicon.org</a></p>
+    </div>
+  </footer>
+</body>
+</html>
